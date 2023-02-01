@@ -62,6 +62,10 @@ const CreatePost = () => {
 			alert('Please enter a prompt and generate an image');
 		}
 	};
+	const handleSubmitClient = e => {
+		e.preventDefault();
+		console.log("handleSubmitClient");
+	};
 	const handleChange = e => {
 		setForm({ ...form, [e.target.name]: e.target.value });
 	};
@@ -79,7 +83,8 @@ const CreatePost = () => {
 					DALL-E AI and share them with the community
 				</p>
 			</div>
-			<form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>
+			{/* <form className="mt-16 max-w-3xl" onSubmit={handleSubmit}> */}
+			<form className="mt-16 max-w-3xl" onSubmit={handleSubmitClient}>
 				<div className="flex flex-col gap-5">
 					<FormField
 						labelName="Your name"
@@ -134,11 +139,14 @@ const CreatePost = () => {
 						Once you have created the image you want, you can share it with
 						others in the community
 					</p>
-					<button
+					{/* <button
 						type="submit"
 						className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
 					>
 						{loading ? 'Sharing...' : 'Share with the community'}
+					</button> */}
+					<button className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center">
+						Share only available for admin user
 					</button>
 				</div>
 			</form>
