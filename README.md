@@ -46,6 +46,12 @@ The AI model used in AI Image Generation is typically a Generative Adversarial N
 
 In this project, DALL-E AI, a state-of-the-art AI model developed by OpenAI, is used for AI Image Generation. The generated images are stored in the Cloudinary database for easy access and retrieval. The application provides a user-friendly interface using React, Vite, and TailwindCSS, while the backend is powered by Node.js, Express, Mongoose, and the Cloudinary API.
 
+## Project ScreenShots
+
+![Home Page](./images/HomePage.png)
+![Image Grid](./images/ImageGrid.png)
+![Generate Image](./images/GenerateImage.png)
+
 ## How to Fork
 
 To fork this repository, follow these steps:
